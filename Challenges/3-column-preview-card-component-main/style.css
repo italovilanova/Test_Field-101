@@ -1,0 +1,135 @@
+/* === RESET CSS === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* --- */
+
+/* === IMPORTANDO FONTES === */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* --- */
+
+/* === CONFIGURANDO O BODY === */
+body {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+}
+
+/* --- */
+
+/* === CONFIGURANDO ELEMENTOS === */
+.content {
+  max-width: 1440px;
+  margin: 10% auto;
+  width: 45%;
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+  margin-top: 1em;
+  margin-bottom: 10em;
+}
+
+h2 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  color: hsl(0, 0%, 95%);
+  margin-top: 1em;
+}
+
+a {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 35px;
+  cursor: pointer;
+  font-family: 'Lexend Deca', sans-serif;
+  padding: 15px 25px;
+  transition-duration: 0.5s;
+  display: inline-block;
+}
+
+#sedans a {
+  color: hsl(31, 77%, 52%);
+}
+
+#suv a {
+  color: hsl(184, 100%, 22%);
+}
+
+#luxury a {
+  color: hsl(179, 100%, 13%);
+}
+
+#sedans a:hover {
+  background-color: transparent;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+#suv a:hover {
+  background-color: transparent;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+#luxury a:hover {
+  background-color: transparent;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+/* Uma das soluções encontradas para solucionar o problema de posicionamento dos elementos consiste definir a exibição do elemento pai como sendo 'display: grid' */
+.car-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Define o tamanho e quantidade de colunas existentes - o atributo 'auto' faz com que o tamanho das colunas seja determinado pelo tamanho do elemento pai/container e pelo tamanho do conteúdo presente */
+}
+
+#sedans {
+  background-color: hsl(31, 77%, 52%);
+  padding: 40px;
+  border-radius: 10px 0 0 10px;
+}
+
+#suv {
+  background-color: hsl(184, 100%, 22%);
+  padding: 40px;
+}
+
+#luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+  padding: 40px;
+}
+
+/* --- */
+
+/* === CONFIGURANDO VISUALIZAÇÃO MOBILE === */
+
+/* A função abaixo faz com que os elementos nela listada sejam alterados quando a largura da tela for igual ou menor do que 768px  */
+@media only screen and (max-width: 768px) {
+  .car-type {
+    grid-template-columns: 1fr; /* a grid deixará de ter três colunas e passará a ter apenas uma */
+  }
+
+  #sedans {
+    border-radius: 10px 10px 0 0;
+  }
+
+  #luxury {
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+/* --- */

@@ -1,0 +1,113 @@
+/* Importando Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Configurando o Body*/
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  margin: 0px;
+}
+
+.content {
+  width: 100vw; /* definindo largura do elemento como sendo igual ao viewport */
+  height: 100vh; /* definindo altura do elemento como sendo igual ao viewport */
+  display: flex; /* habilitando o layout flexível */
+  flex-direction: row; /* agrupando itens em modo de visualizção horizontal (em forma de linha) */
+  justify-content: center; /*  */
+  align-items: center; /*  */
+}
+
+.box {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1em;
+  padding: 2.5em;
+  width: 25%;
+  height: ;
+}
+
+hr {
+  color: hsl(215, 32%, 27%);
+}
+
+#img1 {
+  border-radius: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 50%;
+}
+
+/* --- */
+
+/* Ajustando a Tipografia */
+.box h2 {
+  font-family: 'Outfit';
+  font-weight: 600;
+}
+
+.box h2 a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.box p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+}
+
+.box #s1 {
+  color: hsl(178, 100%, 50%);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+}
+
+.box #s2 {
+  color: hsl(215, 51%, 70%);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  float: right; /* Foi possível utilizar esta propriedade devido o fato do elemento estar contido dentro de '.content' - que usa a propriedade 'display: flex' */
+}
+
+.box #s3 a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+/* --- */
+
+/* Ajustando o avatar */
+#avatar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+#avatar #img2 {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 1px solid white;
+  border-radius: 1.3em;
+}
+/* --- */
+
+/* Efeito 'hover' */
+.box #s3 a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.box h2 a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+/* --- */
+.attribution {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
