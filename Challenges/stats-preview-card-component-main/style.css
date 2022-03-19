@@ -1,0 +1,109 @@
+/* === RESET CSS === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* --- */
+
+/* === CONFIGURANDO O BODY == */
+body {
+  background-color: hsl(233, 47%, 7%);
+  font-size: 15px;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.content {
+  max-width: 1440px;
+  margin: 13% auto;
+}
+
+.container {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  width: 85%;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#presentation {
+  padding: 5.5rem 6rem 4rem 6rem;
+}
+
+.stats {
+  display: flex;
+  margin-top: 4rem;
+  justify-content: space-between;
+}
+
+.container #image {
+  background-repeat: no-repeat;
+  border-radius: 0 10px 10px 0;
+  background-image: url('images/image-header-desktop.jpg');
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  z-index: 1;
+}
+
+.container #image::before {
+  content: '';
+  background-color: rgb(250, 13, 250);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+/* --- */
+
+/* === TIPOGRFIA === */
+h1 {
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-weight: 400;
+}
+
+strong {
+  color: hsl(277, 64%, 61%);
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+
+.stats p {
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 0.4rem;
+}
+
+/* --- */
