@@ -114,6 +114,11 @@ p {
   .grid {
     grid-template-columns: 1fr;
   }
+
+  .stats {
+    display: block;
+    text-align: center;
+  }
 }
 
 /* --- */
